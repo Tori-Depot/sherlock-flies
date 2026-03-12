@@ -1,25 +1,15 @@
-export type FeatureStatus = 'supported' | 'warning' | 'unsupported';
-
-export interface FeatureCheck {
-  name: string;
-  status: FeatureStatus;
-  notes: string;
-  workaround?: string;
+export interface Pipe {
+  x: number;
+  gapY: number;
+  passed: boolean;
 }
 
-export interface RuleResult {
-  category: string;
-  features: FeatureCheck[];
-}
-
-export interface Report {
+export interface GameState {
+  sherlockY: number;
+  velocity: number;
+  pipes: Pipe[];
   score: number;
-  summary: string;
-  supported: number;
-  warnings: number;
-  unsupported: number;
-  total: number;
-  totalJobs: number;
-  affectedJobs: string[];
-  rules: RuleResult[];
+  highScore: number;
+  status: 'idle' | 'playing' | 'dead';
+  frame: number;
 }

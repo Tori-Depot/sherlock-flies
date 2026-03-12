@@ -1,13 +1,13 @@
 {
-  "name": "depot-ci-checker",
+  "name": "sherlock-flies",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "pnpm --parallel --filter './packages/*' dev",
-    "build": "pnpm --filter './packages/*' build",
-    "lint": "pnpm --filter './packages/*' lint",
-    "type-check": "pnpm --filter './packages/*' type-check",
-    "test": "pnpm --filter api test"
+    "dev": "pnpm --filter web dev",
+    "build": "pnpm --filter web build",
+    "lint": "pnpm --filter web lint",
+    "type-check": "pnpm --filter web type-check",
+    "preview": "pnpm --filter web preview"
   },
   "packageManager": "pnpm@10.6.2",
   "pnpm": {

@@ -1,1 +1,36 @@
 @import 'tailwindcss';
+
+@font-face {
+  font-family: 'Red Hat Mono';
+  src: url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300..700&display=swap');
+}
+
+:root {
+  --mauve-black: #04040b;
+  --mauve1: #121113;
+  --mauve2: #1a191b;
+  --mauve3: #232225;
+  --mauve4: #2b292d;
+  --mauve5: #323035;
+  --mauve6: #3c393f;
+  --mauve7: #49474e;
+  --mauve8: #625f69;
+  --mauve9: #6f6d78;
+  --mauve11: #b5b2bc;
+  --mauve12: #eeeef0;
+  --violet9: #6e56cf;
+  --violet11: #9eb1ff;
+  --grass9: #46a758;
+  --grass11: #71d083;
+  --red9: #e5484d;
+  --red11: #ff9592;
+  --amber9: #ffc53d;
+}
+
+body {
+  margin: 0;
+  background: var(--mauve-black);
+  color: var(--mauve12);
+  font-family: 'Red Hat Mono', monospace;
+  overflow: hidden;
+}

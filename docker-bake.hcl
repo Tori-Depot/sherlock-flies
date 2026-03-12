@@ -7,19 +7,12 @@ variable "TAG" {
 }
 
 group "default" {
-  targets = ["api", "web"]
-}
-
-target "api" {
-  dockerfile = "packages/api/Dockerfile"
-  context    = "."
-  platforms  = ["linux/amd64", "linux/arm64"]
-  tags       = ["${REGISTRY}/depot-ci-checker-api:${TAG}"]
+  targets = ["web"]
 }
 
 target "web" {
   dockerfile = "packages/web/Dockerfile"
   context    = "."
   platforms  = ["linux/amd64", "linux/arm64"]
-  tags       = ["${REGISTRY}/depot-ci-checker-web:${TAG}"]
+  tags       = ["${REGISTRY}/sherlock-flies:${TAG}"]
 }
