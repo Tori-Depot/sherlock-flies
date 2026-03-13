@@ -36,5 +36,6 @@ jobs:
       - uses: depot/setup-action@v1
       - uses: depot/bake-action@v1
         with:
+          project: 98c45rp5cr
           files: docker-bake.hcl
           save: true
