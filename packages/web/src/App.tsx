@@ -173,7 +173,7 @@ function drawOverlay(
   if (status === 'idle') {
     ctx.font = 'bold 36px monospace';
     ctx.fillStyle = COLORS.text;
-    ctx.fillText('Sherlock Flies!', cx, cy + 30);
+    ctx.fillText('Sherlock Flies!!', cx, cy + 30);
 
     ctx.font = '16px monospace';
     ctx.fillStyle = COLORS.textDim;
